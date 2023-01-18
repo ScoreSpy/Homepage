@@ -1,21 +1,21 @@
 <template>
   <q-page class="row items-center justify-evenly">
 
-    <q-grid class="flex-center" style="overflow: hidden">
-      <q-col class="text-center ssCard">
+    <div class="row" style="overflow: hidden">
+      <div class="text-center ssCard">
         <img src="/images/clonehero.png" class="ssImg grow" alt="image1"
           @click="clicky('https://clonehero.scorespy.online')">
-        <span class="logo">CLONEHERO</span>
-      </q-col>
-      <q-col class="text-center ssCard">
+        <span class="logoFlex">CLONEHERO</span>
+      </div>
+      <div class="text-center ssCard">
         <img src="/images/ghtv.png" class="ssImg grow" alt="image2" @click="clicky('https://ghtv.scorespy.online')">
-        <span class="logo">GHTV-R</span>
-      </q-col>
-      <q-col class="text-center ssCard">
+        <span class="logoFlex">GHTV-R</span>
+      </div>
+      <div class="text-center ssCard">
         <img src="/images/next.png" class="ssImg grow" alt="image3" style="cursor: not-allowed;">
-        <span class="logo">NEXT?</span>
-      </q-col>
-    </q-grid>
+        <span class="logoFlex">NEXT?</span>
+      </div>
+    </div>
 
   </q-page>
 </template>
@@ -35,6 +35,13 @@ export default defineComponent({
 </script>
 
 <style>
+.logoFlex {
+  font-family: 'Spy Agency Bold';
+  line-height: 1em;
+  max-height: 2em;
+  font-size: 3vw;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
